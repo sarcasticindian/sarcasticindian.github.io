@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>AnimeBlogs</title>
+	<style>
+		
+		body{
+			background-color:#D3D3D3;
+			background-image: url("Images/Animeblogs.jpg");
+			background-repeat: no-repeat;
+			background-position: 50px 10px;
+			background-size: 94% 180%; 
+			background-blend-mode: soft-light;
+			}
+
+
+			.footer{
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			height: 5%;
+			width: 100%;
+			background-color: red;
+			color: white;
+			text-align: center;
+			opacity: 0.8;
+			font-size: 150%;
+			box-shadow: 15px 15px 50px 10px pink inset;
+			
+			
+		}
+
+
+		a:link, a:visited{
+			background-color: black;
+			opacity: 0.6;
+			color: white;
+			padding: 14px 25px;
+			text-align: top;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+
+
+		}
+
+		a:hover,a:active{
+			background-color: red;
+		}
+
+
+
+
+		.sidepanel {
+  height: 100%;
+  width: 0; 
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  opacity: 0.9;
+  }
+
+  .sidepanel a{
+  	padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  text-align: left;
+  transition: 0.3s;
+  opacity: 0.9;
+}
+
+
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 30px;
+  margin-left: 50px;
+  text-align: center;
+  display: inline-block;
+}
+
+
+.openbtn {
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 3px 10px;
+  border: none;
+  opacity: 0.6;
+}
+
+.openbtn:hover {
+  background-color: red;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 3px;
+}
+
+
+
+
+	</style>
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+<!-- Dropdown Navigationbar  -->
+
+
+<div id="mySidepanel" class="sidepanel">
+
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  
+  <a href="index.html">Home</a>
+  <a href="toplist.html">Toplists</a>
+  <a href="Latest_Information.html" >Latest Information</a>
+  <a href="contacts.html">Contact</a>
+  <a href="about.html">About</a>
+
+
+</div>
+
+<div id="main">
+	<button class="openbtn" onclick="openNav()">&#9776;</button>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<!--  end -->
+
+
+
+
+
+<!-- Content -->
+
+ <h1 style="text-align: center; color: black; opacity: 0.8; text-decoration: underline;">About</h1>
+ <p style=" text-align: center; font-size: 200%;">Hi Everyone,
+ I am an Indian Otaku and I am startting this Website is for Every indian(not to be racist) and every Otaku on the planet. This is a Website for Anime and Manga lovers and you will find any and all information regarding Animes and Mangas on this Website and this website will also include various toplists for various topics like top anime characters and top anime shows and top websites to watch anime and much more.  </p>
+
+
+<!--end -->
+
+
+<!-- Footer -->
+
+ <div class="footer">
+
+
+		<a href="#" class="fa fa-facebook" style="padding: 5px; font-size: 20px; width: 20px; text-align: center; "></a>
+
+		<a href="#" class="fa fa-twitter" style="padding: 5px; font-size: 20px; width: 20px; text-align: center; "></a>
+
+		<a href="#" class="fa fa-instagram" style="padding: 5px; font-size: 20px; width: 20px; text-align: center; "></a>
+
+		<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="fa fa-google" style="padding: 5px; font-size: 20px; width: 20px; text-align: center; "></a>
+
+		<a href="#" class="fa fa-youtube" style="padding: 5px; font-size: 20px; width: 20px; text-align: center; "></a>
+
+
+	</div>
+
+
+	<!-- end -->
+</body>
+</html>
